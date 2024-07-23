@@ -29,6 +29,17 @@ docker run -p 8501:8501 streamlit-audio-app
 ```
 4. Open the app in your browser by navigating to `http://localhost:8501`.
 
+## About Dockerfile
+
+The Dockerfile contains the following steps:
+- Use the `python:3.9-slim` image as the base image.
+- Install the required dependencies (Python 3, ffmpeg).
+- Clone the [Riffusion](https://github.com/riffusion/riffusion-hobby)
+- Copy the `app.py` and `requirements.txt` files to the `/app/riffusion/riffusion/streamlit/` directory.
+- Install the required dependencies using `pip`.
+- Modify the `spectrogram_converter.py` file to disable the `max_iter`, `tolerance_loss`, `tolerance_change`, and `sgdargs` parameters.
+- Expose port 8501.
+- Run the Streamlit app using the `venv` environment.
 
 ## Usage
 
