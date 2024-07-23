@@ -64,3 +64,7 @@ The app consists of the following functions:
 Full results can be found in the `results/clips.zip` archive. Here is a GIF showing the app in action:
 
 ![Results](results/results_gif.gif)
+
+[![Watch the video](results/image.png)](https://github.com/chewnusi/audio-generator/blob/master/results/clip_1_with_audio.mp4)
+
+
